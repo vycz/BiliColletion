@@ -30,6 +30,7 @@ def current_datetime():
     return str(datetime.datetime.now())
 
 if __name__ == '__main__':
+    logging.info("程序启动UP！")
     schedule.every(minutes).minutes.do(job)
     while True:
         schedule.run_pending()

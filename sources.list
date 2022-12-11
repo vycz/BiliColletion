@@ -1,4 +1,2 @@
-#http://dl-cdn.alpinelinux.org/alpine/v3.7/main
-#http://dl-cdn.alpinelinux.org/alpine/v3.7/community
-https://mirrors.aliyun.com/alpine/v3.6/main/
-https://mirrors.aliyun.com/alpine/v3.6/community/
+https://mirrors.aliyun.com/alpine/v3.17/main/
+https://mirrors.aliyun.com/alpine/v3.17/community/

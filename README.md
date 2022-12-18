@@ -6,7 +6,7 @@
 |参数|说明|
 |-|-|
 |-e fids='63073060'|收藏夹id，例子：单个63073060；多个63073060,63073061。</br>https://space.bilibili.com/549360/favlist?fid=63073060。|
-|-e minutes='1'|扫描间隔时间，单位：秒|
+|-e minutes='1'|扫描间隔时间，单位：分钟|
 |-v $(pwd):/app/videos/ |/app/videos/为应用内视频下载地址|
 
 ```
@@ -15,5 +15,5 @@ docker run -itd \
       -e fids='63073060' \
       -e minutes='5' \
       --name bili-collection \
-      vycz/bili_collection:v1.1
+      vycz/bili_collection:latest
 ```

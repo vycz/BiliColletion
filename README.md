@@ -11,9 +11,9 @@
 
 ```
 docker run -itd \
-      -v $(pwd):/app/videos/ \
+      -v /mnt/user/nas/docker/bili-collection:/app/videos/ \
       -e fids='63073060' \
       -e minutes='5' \
       --name bili-collection \
-      bili-collection:1.1
+      vycz/bili_collection:v1.1
 ```

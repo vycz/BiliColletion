@@ -1,9 +1,9 @@
 import logging
 import os
 import asyncio
+from apscheduler.schedulers.blocking import BlockingScheduler
 from bilix import DownloaderBilibili
 import sys
-import schedule
 import datetime
 
 # 收藏夹id
@@ -31,6 +31,7 @@ def current_datetime():
 
 if __name__ == '__main__':
     logging.info("程序启动UP！")
-    schedule.every(minutes).minutes.do(job)
-    while True:
-        schedule.run_pending()
+    #添加任务,时间间隔2S
+    scheduler = BlockingScheduler()
+    scheduler.add_job(job, 'interval', minutes=minutes, id='job')
+    scheduler.start()
